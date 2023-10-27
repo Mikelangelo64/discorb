@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#dc4f40">
+    <meta name="msapplication-TileColor" content="#0e5df6">
+    <meta name="theme-color" content="#ffffff">
+    <title>Discorb</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="_container header__container">
+        <div class="header__wrapper"><a class="logo-link header__logo" href="#"> <img src="assets/img/logo-black.svg"
+              alt="logo" draggable="false"></a>
+          <div class="header__buttons"><a class="header-call contact-link" href="tel:+380662105690"><span
+                class="contact-link__label"><img src="assets/img/call.svg" alt="call"></span><span
+                class="contact-link__text">+38 066 210-56-90</span></a></div>
+        </div>
+      </div>
+      <div class="popup popup-common case-1__popup fullscreen-phone" data-popupname="_popup-case-1" aria-modal="true"
+        role="dialog">
+        <div class="popup__overlay"></div>
+        <div class="popup__additional"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper"><button class="popup__close"><img class="desktop" src="assets/img/popup-close.svg"
+                alt="close"><img class="mobile" src="assets/img/popup-close-black.svg" alt="close"></button>
+            <div class="popup__content">
+              <div class="case-popup">
+                <div class="case-popup-media">
+                  <div class="case-popup-media__container"><img src="assets/img/cases/cases-popup.jpg"
+                      alt="case details" loading="lazy"></div>
+                </div>
+                <div class="case-popup__main">
+                  <p class="case-popup__title">Складдання бізнес плану та супровід для кав’ярні</p>
+                  <div class="case-popup__typography typography">
+                    <p>
+                      Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної Групи компаній Caspit. Нашою метою ми
+                      бачимо: зрозуміти особливості бізнесу, з яким маємо страву, та забезпечити досягнення поставлених
+                      клієнтами цілей.
+                    </p>
+                    <p>
+                      Ми фокусуємося на роботі з клієнтами малого та середнього бізнесу, які хочуть отримати новий
+                      імпульс в динаміці розвитку, представляємо їх інтереси у переговорах з фінансовими установами для
+                      забезпечення очікуваного результату.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup-team team-1__popup fullscreen-phone" data-popupname="_popup-team-1" aria-modal="true"
+        role="dialog">
+        <div class="popup__overlay"></div>
+        <div class="popup__additional"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper"><button class="popup__close"><img class="desktop" src="assets/img/popup-close.svg"
+                alt="close"><img class="mobile" src="assets/img/popup-close-black.svg" alt="close"></button>
+            <div class="popup__content">
+              <div class="popup-team-content">
+                <div class="popup-team-media">
+                  <div class="popup-team-media__container"><img src="assets/img/team/team-popup.jpg" alt="team"
+                      loading="lazy"></div>
+                </div>
+                <div class="popup-team__main">
+                  <p class="popup-team__name">Петро Петренко</p>
+                  <p class="popup-team__post">Генеральний директор</p>
+                  <div class="popup-team__typography typography">
+                    <p>
+                      Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної Групи компаній Caspit. Нашою метою ми
+                      бачимо: зрозуміти особливості бізнесу, з яким маємо страву, та забезпечити досягнення поставлених
+                      клієнтами цілей.
+                    </p>
+                    <p>
+                      Ми фокусуємося на роботі з клієнтами малого та середнього бізнесу, які хочуть отримати новий
+                      імпульс в динаміці розвитку, представляємо їх інтереси у переговорах з фінансовими установами для
+                      забезпечення очікуваного результату.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup-feedback thanks__popup " data-popupname="_popup-thanks" aria-modal="true" role="dialog">
+        <div class="popup__overlay"></div>
+        <div class="popup__additional"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper"><button class="popup__close"><img src="assets/img/popup-close.svg"
+                alt="close"></button>
+            <div class="popup__content">
+              <div class="popup-feedback">
+                <div class="popup-feedback__header">
+                  <div class="popup-feedback__label"><img src="assets/img/success.svg" alt="success"></div>
+                  <p class="popup-feedback__title">Дякуємо!</p>
+                </div>
+                <p class="popup-feedback__subtitle">Вашу заявку прийнято. <br />Чекайте на дзвінок найближчим часом.</p>
+                <button class="popup-feedback__button popup__button button-hollow"><span>На головну</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup-feedback error__popup " data-popupname="_popup-error" aria-modal="true" role="dialog">
+        <div class="popup__overlay"></div>
+        <div class="popup__additional"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper"><button class="popup__close"><img src="assets/img/popup-close.svg"
+                alt="close"></button>
+            <div class="popup__content">
+              <div class="popup-feedback">
+                <div class="popup-feedback__header">
+                  <div class="popup-feedback__label"><img src="assets/img/error.svg" alt="success"></div>
+                  <p class="popup-feedback__title">Oops</p>
+                </div>
+                <p class="popup-feedback__subtitle">Something wrong. Try later.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup-form form__popup fullscreen-phone" data-popupname="_popup-form" aria-modal="true"
+        role="dialog">
+        <div class="popup__overlay"></div>
+        <div class="popup__additional"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper"><button class="popup__close"><img class="desktop" src="assets/img/popup-close.svg"
+                alt="close"><img class="mobile" src="assets/img/popup-close-black.svg" alt="close"></button>
+            <div class="popup__content">
+              <div class="popup-action">
+                <p class="popup-action__title">Заповніть, будь ласка форму, і ми зв’яжемося з вами найближчим часом.</p>
+                <div class="popup-action__main">
+                  <form class="form popup-action__form" id="form-popup" action="post">
+                    <div><label for="popup-name"> <strong>Ваше ім’я</strong><input id="popup-name" type="text"
+                          name="name"><span class="wpcf7-not-valid-tip">Невірний формат</span></label></div>
+                    <div><label for="popup-telephone"> <strong>Номер телефону</strong><input id="popup-telephone"
+                          type="tel" name="telephone"><span class="wpcf7-not-valid-tip">Невірний формат</span></label>
+                    </div>
+                    <div><label for="popup-name"> <strong>Найменування компанії, яку представляєте</strong><input
+                          id="popup-company" type="text" name="company"><span class="wpcf7-not-valid-tip">Невірний
+                          формат</span></label></div>
+                    <p><button type="submit">Відправити</button></p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="banner grey">
+      <div class="_container banner__container">
+        <div class="banner__wrapper">
+          <div class="banner__content">
+            <h1 class="banner__title">Залучення Фінансування<span class="marked">ПІД КЛЮЧ<svg width="241" height="11"
+                  viewBox="0 0 241 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path id="Vector 20" d="M240 10C146.665 -1.6882 94.3354 -2.3078 0.999995 10" stroke="currentColor"
+                    stroke-width="2" />
+                </svg></span></h1>
+            <p class="banner__description">Від складання бізнес-плану до безпосереднього представлення інтересів Вашої
+              компанії у фінансових установах для отримання рішення</p><button
+              class="banner__button button-filled popup-open" data-popup="_popup-form"><span>Потрібна
+                консультація</span></button>
+          </div>
+          <div class="banner__media">
+            <div class="banner__media__container"><img src="assets/img/banner-media.jpg" alt="banner"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="experience light">
+      <div class="_container">
+        <div class="experience__wrapper">
+          <div class="section-header experience__header">
+            <p class="section-header__subtitle">досвід</p>
+            <h2 class="section-header__title">На чому базується наша експертність</h2>
+          </div>
+          <ul class="experience-list advanced-list">
+            <li class="advanced-list__item empty">
+              <div class="experience-list-media">
+                <div class="experience-list-media__container"><img src="assets/img/experience/experience-media.jpg"
+                    alt="experience" loading="lazy"></div>
+              </div>
+            </li>
+            <li class="advanced-list__item">
+              <div class="advanced-list__content">
+                <div class="advanced-list__header">
+                  <div class="advanced-list__label"><img src="assets/img/experience/experience-1.svg"
+                      alt="Досвід у сфері фінансів"></div>
+                  <h3 class="advanced-list__title">Досвід у сфері фінансів</h3>
+                </div>
+                <p class="advanced-list__description">Наші фахівці — це експерти фінансового сектору, які опрацювали
+                  понад 1000 заявок (проєктів) бізнесу різних галузей і секторів економіки, розмовляють з банками однією
+                  мовою, що прискорює прийняття рішень.</p>
+              </div>
+            </li>
+            <li class="advanced-list__item">
+              <div class="advanced-list__content">
+                <div class="advanced-list__header">
+                  <div class="advanced-list__label"><img src="assets/img/experience/experience-2.svg"
+                      alt="Власний досвід у бізнесі"></div>
+                  <h3 class="advanced-list__title">Власний досвід у бізнесі</h3>
+                </div>
+                <p class="advanced-list__description">Від складання бізнес-плану до безпосереднього представлення
+                  інтересів Вашої компанії у фінансових установах для отримання рішення.</p>
+              </div>
+            </li>
+            <li class="advanced-list__item">
+              <div class="advanced-list__content">
+                <div class="advanced-list__header">
+                  <div class="advanced-list__label"><img src="assets/img/experience/experience-3.svg"
+                      alt="Досвід системних рішень"></div>
+                  <h3 class="advanced-list__title">Досвід системних рішень</h3>
+                </div>
+                <p class="advanced-list__description">В залежності від запиту ми пропонуємо найкращі інструменти для
+                  досягнення мети: державні та регіональні програми підтримки бізнесу, МФО, грантові програми, цільові
+                  та інвестиційні кредити.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="difficults grey">
+      <div class="_container">
+        <div class="difficults__wrapper">
+          <div class="difficults__content">
+            <div class="section-header">
+              <p class="section-header__subtitle">наша робота</p>
+              <h2 class="section-header__title">Які перепони ми допомагаємо подолати</h2>
+            </div>
+            <p class="difficults__description">За статистикою фінансових установ майже 35% заявок на фінансування
+              отримують відмову з наступних причин:</p><button
+              class="difficults__button button-filled popup-open desktop" data-popup="_popup-form"><span>Потрібна
+                консультація</span></button>
+            <div class="difficults-media desktop">
+              <div class="difficults-media__container"><img src="assets/img/difficults/difficults-media.jpg"
+                  alt="difficults" loading="lazy"></div>
+            </div>
+          </div>
+          <ul class="difficults-list">
+            <li class="difficults-list__item">
+              <div class="difficults-list__label"><img src="assets/img/difficults/difficults-label.png"
+                  alt="difficults"></div>
+              <p class="difficults-list__description">Низька якість поданих документів, які підготував заявник, пізніше
+                вимагають численних уточнень</p>
+            </li>
+            <li class="difficults-list__item">
+              <div class="difficults-list__label"><img src="assets/img/difficults/difficults-label.png"
+                  alt="difficults"></div>
+              <p class="difficults-list__description">Відсутність у персоналу компанії досвіду щодо складанні
+                бізнес-планів за вимогами кредитора</p>
+            </li>
+            <li class="difficults-list__item">
+              <div class="difficults-list__label"><img src="assets/img/difficults/difficults-label.png"
+                  alt="difficults"></div>
+              <p class="difficults-list__description">Різна мова спілкування: кредитор не розуміє бізнес компанії
+                заявника, заявник не розуміє питання, що ставить кредитор</p>
+            </li>
+            <li class="difficults-list__item">
+              <div class="difficults-list__label"><img src="assets/img/difficults/difficults-label.png"
+                  alt="difficults"></div>
+              <p class="difficults-list__description">Недостатність майна заявника для застави та небажання або невміння
+                кредитора запропонувати альтернативне рішення</p>
+            </li>
+            <li class="difficults-list__item">
+              <div class="difficults-list__label"><img src="assets/img/difficults/difficults-label.png"
+                  alt="difficults"></div>
+              <p class="difficults-list__description">Розмаїття програм та кредитних продуктів, у яких не орієнтується
+                заявник, призводять до його нецільового запиту та формальної відмови</p>
+            </li>
+          </ul>
+          <div class="difficults__footer"><button class="difficults__button button-filled popup-open"
+              data-popup="_popup-form"><span>Потрібна консультація</span></button>
+            <div class="difficults-media">
+              <div class="difficults-media__container"><img src="assets/img/difficults/difficults-media.jpg"
+                  alt="difficults" loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="growth light">
+      <div class="_container">
+        <div class="growth__wrapper">
+          <div class="section-header">
+            <p class="section-header__subtitle">розвиток</p>
+            <h2 class="section-header__title">Що ви отримаєте окрім залучення фінансування</h2>
+          </div>
+          <div class="growth__content">
+            <ul class="growth-list advanced-list">
+              <li class="advanced-list__item">
+                <div class="advanced-list__content">
+                  <div class="advanced-list__header">
+                    <div class="advanced-list__label"><img src="assets/img/growth/growth-1.svg"
+                        alt="Прискорення розвитку"></div>
+                    <h3 class="advanced-list__title">Прискорення розвитку</h3>
+                  </div>
+                  <div class="advanced-list__description">Залучення наших спеціалістів дозволить вам обрати саме ті
+                    проєкти, які дійсно дадуть позитивні результати та забезпечать швидке зростання бізнесу</div>
+                </div>
+              </li>
+              <li class="advanced-list__item">
+                <div class="advanced-list__content">
+                  <div class="advanced-list__header">
+                    <div class="advanced-list__label"><img src="assets/img/growth/growth-2.svg" alt="BANKABLE профіль">
+                    </div>
+                    <h3 class="advanced-list__title">BANKABLE профіль</h3>
+                  </div>
+                  <div class="advanced-list__description">Через консультації та поради щодо структурування групи
+                    компаній бізнес стане більш зрозумілим та привабливим для кредитних установ в майбутньому</div>
+                </div>
+              </li>
+              <li class="advanced-list__item">
+                <div class="advanced-list__content">
+                  <div class="advanced-list__header">
+                    <div class="advanced-list__label"><img src="assets/img/growth/growth-3.svg"
+                        alt="Поради з організації структури"></div>
+                    <h3 class="advanced-list__title">Поради з організації структури</h3>
+                  </div>
+                  <div class="advanced-list__description">Ви зможете побудувати оптимальну структуру, впорядкувати
+                    потоки між компаніями</div>
+                </div>
+              </li>
+            </ul>
+            <div class="growth-media">
+              <div class="growth-media__container"><img src="assets/img/growth/growth-media.jpg" alt="growth-media"
+                  loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="financing grey">
+      <div class="_container">
+        <div class="financing__wrapper">
+          <div class="financing__content">
+            <div class="section-header">
+              <p class="section-header__subtitle">фінансування</p>
+              <h2 class="section-header__title">Наша роль у залученні фінансування для вашої компанії</h2>
+            </div><button class="financing__button button-filled popup-open desktop"
+              data-popup="_popup-form"><span>Потрібна консультація</span></button>
+            <div class="financing-media"><img src="assets/img/logo-black.svg" alt="logo"></div>
+          </div>
+          <ul class="financing-list">
+            <li class="financing-list__item">
+              <p class="financing-list__description">
+                <span>Діагностика бізнесу та надання висновку щодо кредитоспроможності </span>
+                та надання рекомендацій з ведення обліку і складання фінансової звітності 
+              </p>
+            </li>
+            <li class="financing-list__item">
+              <p class="financing-list__description">
+                <span>Консолідація та побудова фінансової моделі</span> компанії або її групи, маючи на меті забезпечити
+                достатній рівень розкриття інформації для уникнення повторних запитів від банків. Складання пакету
+                необхідних документів
+              </p>
+            </li>
+            <li class="financing-list__item">
+              <p class="financing-list__description">
+                <span>Представлення інтересів вашої компанії в кількох банках одночасно </span>
+                для створення конкуренції між фінансовими установами та розширення можливостей для вашої компанії в
+                доступі до кредитних коштів
+              </p>
+            </li>
+            <li class="financing-list__item">
+              <p class="financing-list__description">
+                <span>Менеджмент процесу розгляду банками заявки </span>
+                вашої компанії до отримання рішення: опрацювання запитів банків, супровід підготовки документів на
+                додаткові запити, організація та проведення зустрічей
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="cases light">
+      <div class="_container">
+        <div class="cases__wrapper">
+          <div class="section-header cases-header">
+            <p class="section-header__subtitle">наша праця</p>
+            <h2 class="section-header__title">Кілька кейсів з нашої практики</h2>
+          </div>
+          <div class="cases__main">
+            <div class="cases-slider swiper slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="cases-slider__item"><button class="cases-slider-media popup-open"
+                      data-popup="_popup-case-1"><span class="cases-slider-media__container"><img
+                          src="assets/img/cases/cases-1.jpg" alt="Супровід фінансування компанії"
+                          loading="lazy"></span></button>
+                    <div class="cases-slider__content">
+                      <h3 class="cases-slider__title">Супровід фінансування компанії</h3>
+                      <p class="cases-slider__description">Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної
+                        Групи компаній Caspit. Нашою метою ми бачимо</p><button
+                        class="cases-slider__button button-hollow popup-open" data-popup="_popup-case-1"><span>Деталі
+                          проєкту</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases-slider__item"><button class="cases-slider-media popup-open"
+                      data-popup="_popup-case-1"><span class="cases-slider-media__container"><img
+                          src="assets/img/cases/cases-2.jpg" alt="Складдання бізнес плану та супровід для кав’ярні"
+                          loading="lazy"></span></button>
+                    <div class="cases-slider__content">
+                      <h3 class="cases-slider__title">Складдання бізнес плану та супровід для кав’ярні</h3>
+                      <p class="cases-slider__description">Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної
+                        Групи компаній Caspit. Нашою метою ми бачимо Нашою метою ми бачимо Нашою метою ми бачимо</p>
+                      <button class="cases-slider__button button-hollow popup-open"
+                        data-popup="_popup-case-1"><span>Деталі проєкту</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases-slider__item"><button class="cases-slider-media popup-open"
+                      data-popup="_popup-case-1"><span class="cases-slider-media__container"><img
+                          src="assets/img/cases/cases-3.jpg" alt="Супровід фінансування компанії"
+                          loading="lazy"></span></button>
+                    <div class="cases-slider__content">
+                      <h3 class="cases-slider__title">Супровід фінансування компанії</h3>
+                      <p class="cases-slider__description">Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної
+                        Групи компаній Caspit. Нашою метою ми бачимо</p><button
+                        class="cases-slider__button button-hollow popup-open" data-popup="_popup-case-1"><span>Деталі
+                          проєкту</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases-slider__item"><button class="cases-slider-media popup-open"
+                      data-popup="_popup-case-1"><span class="cases-slider-media__container"><img
+                          src="assets/img/cases/cases-1.jpg" alt="Супровід фінансування компанії"
+                          loading="lazy"></span></button>
+                    <div class="cases-slider__content">
+                      <h3 class="cases-slider__title">Супровід фінансування компанії</h3>
+                      <p class="cases-slider__description">Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної
+                        Групи компаній Caspit. Нашою метою ми бачимо</p><button
+                        class="cases-slider__button button-hollow popup-open" data-popup="_popup-case-1"><span>Деталі
+                          проєкту</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases-slider__item"><button class="cases-slider-media popup-open"
+                      data-popup="_popup-case-1"><span class="cases-slider-media__container"><img
+                          src="assets/img/cases/cases-2.jpg" alt="Складдання бізнес плану та супровід для кав’ярні"
+                          loading="lazy"></span></button>
+                    <div class="cases-slider__content">
+                      <h3 class="cases-slider__title">Складдання бізнес плану та супровід для кав’ярні</h3>
+                      <p class="cases-slider__description">Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної
+                        Групи компаній Caspit. Нашою метою ми бачимо Нашою метою ми бачимо Нашою метою ми бачимо</p>
+                      <button class="cases-slider__button button-hollow popup-open"
+                        data-popup="_popup-case-1"><span>Деталі проєкту</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases-slider__item"><button class="cases-slider-media popup-open"
+                      data-popup="_popup-case-1"><span class="cases-slider-media__container"><img
+                          src="assets/img/cases/cases-3.jpg" alt="Супровід фінансування компанії"
+                          loading="lazy"></span></button>
+                    <div class="cases-slider__content">
+                      <h3 class="cases-slider__title">Супровід фінансування компанії</h3>
+                      <p class="cases-slider__description">Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної
+                        Групи компаній Caspit. Нашою метою ми бачимо</p><button
+                        class="cases-slider__button button-hollow popup-open" data-popup="_popup-case-1"><span>Деталі
+                          проєкту</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases-slider__item"><button class="cases-slider-media popup-open"
+                      data-popup="_popup-case-1"><span class="cases-slider-media__container"><img
+                          src="assets/img/cases/cases-1.jpg" alt="Супровід фінансування компанії"
+                          loading="lazy"></span></button>
+                    <div class="cases-slider__content">
+                      <h3 class="cases-slider__title">Супровід фінансування компанії</h3>
+                      <p class="cases-slider__description">Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної
+                        Групи компаній Caspit. Нашою метою ми бачимо</p><button
+                        class="cases-slider__button button-hollow popup-open" data-popup="_popup-case-1"><span>Деталі
+                          проєкту</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases-slider__item"><button class="cases-slider-media popup-open"
+                      data-popup="_popup-case-1"><span class="cases-slider-media__container"><img
+                          src="assets/img/cases/cases-2.jpg" alt="Складдання бізнес плану та супровід для кав’ярні"
+                          loading="lazy"></span></button>
+                    <div class="cases-slider__content">
+                      <h3 class="cases-slider__title">Складдання бізнес плану та супровід для кав’ярні</h3>
+                      <p class="cases-slider__description">Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної
+                        Групи компаній Caspit. Нашою метою ми бачимо Нашою метою ми бачимо Нашою метою ми бачимо</p>
+                      <button class="cases-slider__button button-hollow popup-open"
+                        data-popup="_popup-case-1"><span>Деталі проєкту</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases-slider__item"><button class="cases-slider-media popup-open"
+                      data-popup="_popup-case-1"><span class="cases-slider-media__container"><img
+                          src="assets/img/cases/cases-3.jpg" alt="Супровід фінансування компанії"
+                          loading="lazy"></span></button>
+                    <div class="cases-slider__content">
+                      <h3 class="cases-slider__title">Супровід фінансування компанії</h3>
+                      <p class="cases-slider__description">Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної
+                        Групи компаній Caspit. Нашою метою ми бачимо</p><button
+                        class="cases-slider__button button-hollow popup-open" data-popup="_popup-case-1"><span>Деталі
+                          проєкту</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases-slider__item"><button class="cases-slider-media popup-open"
+                      data-popup="_popup-case-1"><span class="cases-slider-media__container"><img
+                          src="assets/img/cases/cases-1.jpg" alt="Супровід фінансування компанії"
+                          loading="lazy"></span></button>
+                    <div class="cases-slider__content">
+                      <h3 class="cases-slider__title">Супровід фінансування компанії</h3>
+                      <p class="cases-slider__description">Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної
+                        Групи компаній Caspit. Нашою метою ми бачимо</p><button
+                        class="cases-slider__button button-hollow popup-open" data-popup="_popup-case-1"><span>Деталі
+                          проєкту</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases-slider__item"><button class="cases-slider-media popup-open"
+                      data-popup="_popup-case-1"><span class="cases-slider-media__container"><img
+                          src="assets/img/cases/cases-2.jpg" alt="Складдання бізнес плану та супровід для кав’ярні"
+                          loading="lazy"></span></button>
+                    <div class="cases-slider__content">
+                      <h3 class="cases-slider__title">Складдання бізнес плану та супровід для кав’ярні</h3>
+                      <p class="cases-slider__description">Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної
+                        Групи компаній Caspit. Нашою метою ми бачимо Нашою метою ми бачимо Нашою метою ми бачимо</p>
+                      <button class="cases-slider__button button-hollow popup-open"
+                        data-popup="_popup-case-1"><span>Деталі проєкту</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases-slider__item"><button class="cases-slider-media popup-open"
+                      data-popup="_popup-case-1"><span class="cases-slider-media__container"><img
+                          src="assets/img/cases/cases-3.jpg" alt="Супровід фінансування компанії"
+                          loading="lazy"></span></button>
+                    <div class="cases-slider__content">
+                      <h3 class="cases-slider__title">Супровід фінансування компанії</h3>
+                      <p class="cases-slider__description">Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної
+                        Групи компаній Caspit. Нашою метою ми бачимо</p><button
+                        class="cases-slider__button button-hollow popup-open" data-popup="_popup-case-1"><span>Деталі
+                          проєкту</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases-slider__item"><button class="cases-slider-media popup-open"
+                      data-popup="_popup-case-1"><span class="cases-slider-media__container"><img
+                          src="assets/img/cases/cases-1.jpg" alt="Супровід фінансування компанії"
+                          loading="lazy"></span></button>
+                    <div class="cases-slider__content">
+                      <h3 class="cases-slider__title">Супровід фінансування компанії</h3>
+                      <p class="cases-slider__description">Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної
+                        Групи компаній Caspit. Нашою метою ми бачимо</p><button
+                        class="cases-slider__button button-hollow popup-open" data-popup="_popup-case-1"><span>Деталі
+                          проєкту</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases-slider__item"><button class="cases-slider-media popup-open"
+                      data-popup="_popup-case-1"><span class="cases-slider-media__container"><img
+                          src="assets/img/cases/cases-2.jpg" alt="Складдання бізнес плану та супровід для кав’ярні"
+                          loading="lazy"></span></button>
+                    <div class="cases-slider__content">
+                      <h3 class="cases-slider__title">Складдання бізнес плану та супровід для кав’ярні</h3>
+                      <p class="cases-slider__description">Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної
+                        Групи компаній Caspit. Нашою метою ми бачимо Нашою метою ми бачимо Нашою метою ми бачимо</p>
+                      <button class="cases-slider__button button-hollow popup-open"
+                        data-popup="_popup-case-1"><span>Деталі проєкту</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases-slider__item"><button class="cases-slider-media popup-open"
+                      data-popup="_popup-case-1"><span class="cases-slider-media__container"><img
+                          src="assets/img/cases/cases-3.jpg" alt="Супровід фінансування компанії"
+                          loading="lazy"></span></button>
+                    <div class="cases-slider__content">
+                      <h3 class="cases-slider__title">Супровід фінансування компанії</h3>
+                      <p class="cases-slider__description">Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної
+                        Групи компаній Caspit. Нашою метою ми бачимо</p><button
+                        class="cases-slider__button button-hollow popup-open" data-popup="_popup-case-1"><span>Деталі
+                          проєкту</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases-slider__item"><button class="cases-slider-media popup-open"
+                      data-popup="_popup-case-1"><span class="cases-slider-media__container"><img
+                          src="assets/img/cases/cases-1.jpg" alt="Супровід фінансування компанії"
+                          loading="lazy"></span></button>
+                    <div class="cases-slider__content">
+                      <h3 class="cases-slider__title">Супровід фінансування компанії</h3>
+                      <p class="cases-slider__description">Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної
+                        Групи компаній Caspit. Нашою метою ми бачимо</p><button
+                        class="cases-slider__button button-hollow popup-open" data-popup="_popup-case-1"><span>Деталі
+                          проєкту</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases-slider__item"><button class="cases-slider-media popup-open"
+                      data-popup="_popup-case-1"><span class="cases-slider-media__container"><img
+                          src="assets/img/cases/cases-2.jpg" alt="Складдання бізнес плану та супровід для кав’ярні"
+                          loading="lazy"></span></button>
+                    <div class="cases-slider__content">
+                      <h3 class="cases-slider__title">Складдання бізнес плану та супровід для кав’ярні</h3>
+                      <p class="cases-slider__description">Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної
+                        Групи компаній Caspit. Нашою метою ми бачимо Нашою метою ми бачимо Нашою метою ми бачимо</p>
+                      <button class="cases-slider__button button-hollow popup-open"
+                        data-popup="_popup-case-1"><span>Деталі проєкту</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cases-slider__item"><button class="cases-slider-media popup-open"
+                      data-popup="_popup-case-1"><span class="cases-slider-media__container"><img
+                          src="assets/img/cases/cases-3.jpg" alt="Супровід фінансування компанії"
+                          loading="lazy"></span></button>
+                    <div class="cases-slider__content">
+                      <h3 class="cases-slider__title">Супровід фінансування компанії</h3>
+                      <p class="cases-slider__description">Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної
+                        Групи компаній Caspit. Нашою метою ми бачимо</p><button
+                        class="cases-slider__button button-hollow popup-open" data-popup="_popup-case-1"><span>Деталі
+                          проєкту</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cases-slider-controls slider-controls">
+              <div class="cases-slider-pagination slider-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="_container">
+        <div class="about__warpper">
+          <div class="about-media">
+            <div class="about-media__container"><img src="assets/img/about-media.jpg" alt="about"></div>
+          </div>
+          <div class="about__content">
+            <div class="section-header"></div>
+            <p class="section-header__subtitle">ДІСКОРБ</p>
+            <h2 class="section-header__title">Про компанію</h2>
+            <div class="about__typography typography">
+              <p>
+                Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної Групи компаній Caspit. Нашою метою ми
+                бачимо: зрозуміти особливості бізнесу, з яким маємо страву, та забезпечити досягнення поставлених
+                клієнтами цілей.
+              </p>
+              <p>
+                Ми фокусуємося на роботі з клієнтами малого та середнього бізнесу, які хочуть отримати новий імпульс в
+                динаміці розвитку, представляємо їх інтереси у переговорах з фінансовими установами для забезпечення
+                очікуваного результату.
+              </p>
+              <p>
+                У своїй роботі ми керуємося безкомпромісним правилом: в кредитні установи для залучення фінансування
+                передається тільки той проєкт, який не викликає сумнівів щодо його ефективності, і в який компанія
+                готова була б інвестувати власний капітал
+              </p>
+            </div><button class="about__button button-filled popup-open" data-popup="_popup-form"><span>Потрібна
+                консультація</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="team light near-seo__above">
+      <div class="_container">
+        <div class="team__wrapper">
+          <div class="section-header team-header">
+            <p class="section-header__subtitle">співробітники</p>
+            <h2 class="section-header__title">Наша команда</h2>
+          </div>
+          <div class="team__main">
+            <div class="team-slider swiper slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="team-slider__item"><button class="team-slider-media popup-open"
+                      data-popup="_popup-team-1"><span class="team-slider-media__hover"><span
+                          class="team-slider-media__button button-filled"><span>Докладніше</span></span></span><span
+                        class="team-slider-media__container"><img src="assets/img/team/team-1.jpg" alt="Лілія Фурсова"
+                          loading="lazy"></span></button>
+                    <div class="team-slider__content">
+                      <h3 class="team-slider__title">Лілія Фурсова</h3>
+                      <p class="team-slider__description">Заступник директора по роботі з банками</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-slider__item"><button class="team-slider-media popup-open"
+                      data-popup="_popup-team-1"><span class="team-slider-media__hover"><span
+                          class="team-slider-media__button button-filled"><span>Докладніше</span></span></span><span
+                        class="team-slider-media__container"><img src="assets/img/team/team-2.jpg" alt="Петро Петренко"
+                          loading="lazy"></span></button>
+                    <div class="team-slider__content">
+                      <h3 class="team-slider__title">Петро Петренко</h3>
+                      <p class="team-slider__description">Генеральний директор</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-slider__item"><button class="team-slider-media popup-open"
+                      data-popup="_popup-team-1"><span class="team-slider-media__hover"><span
+                          class="team-slider-media__button button-filled"><span>Докладніше</span></span></span><span
+                        class="team-slider-media__container"><img src="assets/img/team/team-3.jpg" alt="Михайло Дарко"
+                          loading="lazy"></span></button>
+                    <div class="team-slider__content">
+                      <h3 class="team-slider__title">Михайло Дарко</h3>
+                      <p class="team-slider__description">Директор з маркетингу</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-slider__item"><button class="team-slider-media popup-open"
+                      data-popup="_popup-team-1"><span class="team-slider-media__hover"><span
+                          class="team-slider-media__button button-filled"><span>Докладніше</span></span></span><span
+                        class="team-slider-media__container"><img src="assets/img/team/team-1.jpg" alt="Лілія Фурсова"
+                          loading="lazy"></span></button>
+                    <div class="team-slider__content">
+                      <h3 class="team-slider__title">Лілія Фурсова</h3>
+                      <p class="team-slider__description">Заступник директора по роботі з банками</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-slider__item"><button class="team-slider-media popup-open"
+                      data-popup="_popup-team-1"><span class="team-slider-media__hover"><span
+                          class="team-slider-media__button button-filled"><span>Докладніше</span></span></span><span
+                        class="team-slider-media__container"><img src="assets/img/team/team-2.jpg" alt="Петро Петренко"
+                          loading="lazy"></span></button>
+                    <div class="team-slider__content">
+                      <h3 class="team-slider__title">Петро Петренко</h3>
+                      <p class="team-slider__description">Генеральний директор</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-slider__item"><button class="team-slider-media popup-open"
+                      data-popup="_popup-team-1"><span class="team-slider-media__hover"><span
+                          class="team-slider-media__button button-filled"><span>Докладніше</span></span></span><span
+                        class="team-slider-media__container"><img src="assets/img/team/team-3.jpg" alt="Михайло Дарко"
+                          loading="lazy"></span></button>
+                    <div class="team-slider__content">
+                      <h3 class="team-slider__title">Михайло Дарко</h3>
+                      <p class="team-slider__description">Директор з маркетингу</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-slider__item"><button class="team-slider-media popup-open"
+                      data-popup="_popup-team-1"><span class="team-slider-media__hover"><span
+                          class="team-slider-media__button button-filled"><span>Докладніше</span></span></span><span
+                        class="team-slider-media__container"><img src="assets/img/team/team-1.jpg" alt="Лілія Фурсова"
+                          loading="lazy"></span></button>
+                    <div class="team-slider__content">
+                      <h3 class="team-slider__title">Лілія Фурсова</h3>
+                      <p class="team-slider__description">Заступник директора по роботі з банками</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-slider__item"><button class="team-slider-media popup-open"
+                      data-popup="_popup-team-1"><span class="team-slider-media__hover"><span
+                          class="team-slider-media__button button-filled"><span>Докладніше</span></span></span><span
+                        class="team-slider-media__container"><img src="assets/img/team/team-2.jpg" alt="Петро Петренко"
+                          loading="lazy"></span></button>
+                    <div class="team-slider__content">
+                      <h3 class="team-slider__title">Петро Петренко</h3>
+                      <p class="team-slider__description">Генеральний директор</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-slider__item"><button class="team-slider-media popup-open"
+                      data-popup="_popup-team-1"><span class="team-slider-media__hover"><span
+                          class="team-slider-media__button button-filled"><span>Докладніше</span></span></span><span
+                        class="team-slider-media__container"><img src="assets/img/team/team-3.jpg" alt="Михайло Дарко"
+                          loading="lazy"></span></button>
+                    <div class="team-slider__content">
+                      <h3 class="team-slider__title">Михайло Дарко</h3>
+                      <p class="team-slider__description">Директор з маркетингу</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-slider__item"><button class="team-slider-media popup-open"
+                      data-popup="_popup-team-1"><span class="team-slider-media__hover"><span
+                          class="team-slider-media__button button-filled"><span>Докладніше</span></span></span><span
+                        class="team-slider-media__container"><img src="assets/img/team/team-1.jpg" alt="Лілія Фурсова"
+                          loading="lazy"></span></button>
+                    <div class="team-slider__content">
+                      <h3 class="team-slider__title">Лілія Фурсова</h3>
+                      <p class="team-slider__description">Заступник директора по роботі з банками</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-slider__item"><button class="team-slider-media popup-open"
+                      data-popup="_popup-team-1"><span class="team-slider-media__hover"><span
+                          class="team-slider-media__button button-filled"><span>Докладніше</span></span></span><span
+                        class="team-slider-media__container"><img src="assets/img/team/team-2.jpg" alt="Петро Петренко"
+                          loading="lazy"></span></button>
+                    <div class="team-slider__content">
+                      <h3 class="team-slider__title">Петро Петренко</h3>
+                      <p class="team-slider__description">Генеральний директор</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-slider__item"><button class="team-slider-media popup-open"
+                      data-popup="_popup-team-1"><span class="team-slider-media__hover"><span
+                          class="team-slider-media__button button-filled"><span>Докладніше</span></span></span><span
+                        class="team-slider-media__container"><img src="assets/img/team/team-3.jpg" alt="Михайло Дарко"
+                          loading="lazy"></span></button>
+                    <div class="team-slider__content">
+                      <h3 class="team-slider__title">Михайло Дарко</h3>
+                      <p class="team-slider__description">Директор з маркетингу</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-slider__item"><button class="team-slider-media popup-open"
+                      data-popup="_popup-team-1"><span class="team-slider-media__hover"><span
+                          class="team-slider-media__button button-filled"><span>Докладніше</span></span></span><span
+                        class="team-slider-media__container"><img src="assets/img/team/team-1.jpg" alt="Лілія Фурсова"
+                          loading="lazy"></span></button>
+                    <div class="team-slider__content">
+                      <h3 class="team-slider__title">Лілія Фурсова</h3>
+                      <p class="team-slider__description">Заступник директора по роботі з банками</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-slider__item"><button class="team-slider-media popup-open"
+                      data-popup="_popup-team-1"><span class="team-slider-media__hover"><span
+                          class="team-slider-media__button button-filled"><span>Докладніше</span></span></span><span
+                        class="team-slider-media__container"><img src="assets/img/team/team-2.jpg" alt="Петро Петренко"
+                          loading="lazy"></span></button>
+                    <div class="team-slider__content">
+                      <h3 class="team-slider__title">Петро Петренко</h3>
+                      <p class="team-slider__description">Генеральний директор</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-slider__item"><button class="team-slider-media popup-open"
+                      data-popup="_popup-team-1"><span class="team-slider-media__hover"><span
+                          class="team-slider-media__button button-filled"><span>Докладніше</span></span></span><span
+                        class="team-slider-media__container"><img src="assets/img/team/team-3.jpg" alt="Михайло Дарко"
+                          loading="lazy"></span></button>
+                    <div class="team-slider__content">
+                      <h3 class="team-slider__title">Михайло Дарко</h3>
+                      <p class="team-slider__description">Директор з маркетингу</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-slider__item"><button class="team-slider-media popup-open"
+                      data-popup="_popup-team-1"><span class="team-slider-media__hover"><span
+                          class="team-slider-media__button button-filled"><span>Докладніше</span></span></span><span
+                        class="team-slider-media__container"><img src="assets/img/team/team-1.jpg" alt="Лілія Фурсова"
+                          loading="lazy"></span></button>
+                    <div class="team-slider__content">
+                      <h3 class="team-slider__title">Лілія Фурсова</h3>
+                      <p class="team-slider__description">Заступник директора по роботі з банками</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-slider__item"><button class="team-slider-media popup-open"
+                      data-popup="_popup-team-1"><span class="team-slider-media__hover"><span
+                          class="team-slider-media__button button-filled"><span>Докладніше</span></span></span><span
+                        class="team-slider-media__container"><img src="assets/img/team/team-2.jpg" alt="Петро Петренко"
+                          loading="lazy"></span></button>
+                    <div class="team-slider__content">
+                      <h3 class="team-slider__title">Петро Петренко</h3>
+                      <p class="team-slider__description">Генеральний директор</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-slider__item"><button class="team-slider-media popup-open"
+                      data-popup="_popup-team-1"><span class="team-slider-media__hover"><span
+                          class="team-slider-media__button button-filled"><span>Докладніше</span></span></span><span
+                        class="team-slider-media__container"><img src="assets/img/team/team-3.jpg" alt="Михайло Дарко"
+                          loading="lazy"></span></button>
+                    <div class="team-slider__content">
+                      <h3 class="team-slider__title">Михайло Дарко</h3>
+                      <p class="team-slider__description">Директор з маркетингу</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-slider-controls slider-controls">
+              <div class="team-slider-pagination slider-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section seo-banner light">
+      <div class="_container">
+        <div class="seo-banner__wrapper">
+          <div class="seo-banner-bg">
+            <div class="seo-banner-bg__img"><img src="assets/img/seo-banner.png" alt="seo-banner" loading="lazy"></div>
+          </div>
+          <div class="seo-banner__content">
+            <div class="section-header seo-banner-header">
+              <p class="section-header__subtitle">PRO BONO</p>
+              <p class="section-header__title seo-banner__title">Ми пропонуємо <span>PRO BONO</span> послугу</p>
+            </div>
+            <p class="seo-banner__subtitle">За результатами консультації ми можемо запропонувати</p>
+            <p class="seo-banner__description">екпрес-оцінку кредитоспроможності вашої компанії безкоштовно</p><button
+              class="button-filled seo-banner__button popup-open" data-popup="_popup-form"><span>Потрібна
+                консультація</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer near-seo__below">
+      <div class="_container">
+        <div class="footer__wrapper">
+          <div class="footer__main">
+            <div class="footer__item"><a class="logo-link footer__logo" href="#"> <img src="assets/img/logo-black.svg"
+                  alt="logo" draggable="false"></a></div>
+            <div class="footer__item desktop"><a class="footer-contacts__link contact-link location"
+                href="https://www.google.com/maps/place/ул.+Казацкая,+120%2F4,+Киев,+02000/@50.396979,30.4921365,18z/data=!4m9!1m2!2m1!1zMDMwMjIsINC80ZbRgdGC0L4g0JrQuNGX0LIsICDQstGD0LsuINCa0L7Qt9Cw0YbRjNC60LAsIDEyMC80LCDQutC-0YDQv9GD0YEg0JIsINC60ZbQvNC90LDRgtCwIDE1!3m5!1s0x40d4c8d034b088bb:0x7935e7458342673a!8m2!3d50.396979!4d30.4921365!16s%2Fg%2F1tczcdtc?authuser=0"
+                target="_blank"><span class="contact-link__label"><img src="assets/img/contacts/contacts-1.svg"
+                    alt="contact-1"></span><span class="contact-link__text">03022, місто Київ, вул. Козацька, 120/4,
+                  корпус В, кімната 15</span></a></div>
+            <div class="footer__item">
+              <ul class="footer-contacts">
+                <li class="mobile"><a class="footer-contacts__link contact-link mobile"
+                    href="https://www.google.com/maps/place/ул.+Казацкая,+120%2F4,+Киев,+02000/@50.396979,30.4921365,18z/data=!4m9!1m2!2m1!1zMDMwMjIsINC80ZbRgdGC0L4g0JrQuNGX0LIsICDQstGD0LsuINCa0L7Qt9Cw0YbRjNC60LAsIDEyMC80LCDQutC-0YDQv9GD0YEg0JIsINC60ZbQvNC90LDRgtCwIDE1!3m5!1s0x40d4c8d034b088bb:0x7935e7458342673a!8m2!3d50.396979!4d30.4921365!16s%2Fg%2F1tczcdtc?authuser=0"
+                    target="_blank"><span class="contact-link__label"><img src="assets/img/contacts/contacts-1.svg"
+                        alt="contact-1"></span><span class="contact-link__text">03022, місто Київ, вул. Козацька, 120/4,
+                      корпус В, кімната 15</span></a></li>
+                <li><a class="footer-contacts__link contact-link" href="tel:+380662105690" target="_self"><span
+                      class="contact-link__label"><img src="assets/img/contacts/contacts-2.svg"
+                        alt="contact-2"></span><span class="contact-link__text">+38 066 210-56-90</span></a></li>
+                <li><a class="footer-contacts__link contact-link" href="mailto:info@discorb.com.ua" target="_self"><span
+                      class="contact-link__label"><img src="assets/img/contacts/contacts-3.svg"
+                        alt="contact-3"></span><span class="contact-link__text">info@discorb.com.ua</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <p class="footer__group">Група компаній Caspit<a href="https://caspit.group" target="_blank"
+                rel="noreferrer">https://caspit.group</a></p>
+            <p class="footer__copyright">Copyright © 2023 ТОВ «ДІСКОРБ»</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="runtime.bundle.js"> </script>
+    <script src="vendor.js"> </script>
+    <script src="607.bundle.js"> </script>
+    <script src="index.1.bundle.js"> </script>
+  </body>
+</html>

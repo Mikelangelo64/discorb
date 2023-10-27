@@ -1,0 +1,55 @@
+-
+  const teamList = [
+    {
+      image: '@/assets/img/team/team-1.jpg',
+      title: 'Лілія Фурсова',
+      description: 'Заступник директора по роботі з банками',
+    },
+    {
+      image: '@/assets/img/team/team-2.jpg',
+      title: 'Петро Петренко',
+      description: 'Генеральний директор',
+    },
+    {
+      image: '@/assets/img/team/team-3.jpg',
+      title: 'Михайло Дарко',
+      description: 'Директор з маркетингу',
+    },
+  ];
+
+section.team.light.near-seo__above
+  ._container
+    .team__wrapper
+      .section-header.team-header
+        p.section-header__subtitle співробітники
+
+        h2.section-header__title Наша команда
+
+      .team__main
+        .team-slider.swiper.slider
+          .swiper-wrapper
+            - for (let i=0; i<6; i++)
+              each item in teamList
+                .swiper-slide
+                  .team-slider__item
+                    button.team-slider-media.popup-open(
+                      data-popup='_popup-team-1'
+                    )
+                      span.team-slider-media__hover
+                        span.team-slider-media__button.button-filled
+                          span Докладніше
+
+                      span.team-slider-media__container
+                        img(
+                          src=require(`${item.image}`),
+                          alt=`${item.title}`,
+                          loading='lazy'
+                        )
+
+                    .team-slider__content
+                      h3.team-slider__title= item.title
+
+                      p.team-slider__description= item.description
+
+        .team-slider-controls.slider-controls
+          .team-slider-pagination.slider-pagination

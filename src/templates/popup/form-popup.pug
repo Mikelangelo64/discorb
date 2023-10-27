@@ -1,0 +1,34 @@
+.popup-action
+  p.popup-action__title Заповніть, будь ласка форму, і ми зв’яжемося з вами найближчим часом.
+
+  .popup-action__main
+    form#form-popup.form.popup-action__form(action='post') 
+      //- div
+      //-   label(for='popup-select') 
+      //-     strong Тип звернення
+      //-     select#popup-select(name='select', form='form-popup')
+      //-       option(value='value 1', selected) value 1
+      //-       option(value='value 2') value 2
+      //-       option(value='value 3') value 3
+      //-     span.wpcf7-not-valid-tip Невірний формат
+
+      div
+        label(for='popup-name') 
+          strong Ваше ім’я
+          input#popup-name(type='text', name='name')
+          span.wpcf7-not-valid-tip Невірний формат
+
+      div
+        label(for='popup-telephone') 
+          strong Номер телефону
+          input#popup-telephone(type='tel', name='telephone')
+          span.wpcf7-not-valid-tip Невірний формат
+
+      div
+        label(for='popup-name') 
+          strong Найменування компанії, яку представляєте
+          input#popup-company(type='text', name='company')
+          span.wpcf7-not-valid-tip Невірний формат
+
+      p
+        button(type='submit') Відправити

@@ -1,0 +1,33 @@
+$colors: (
+  'white': #fff,
+  'black': #0c1533,
+
+  'black-100': #1b1b1b,
+  'black-200': #0a1621,
+
+  'grey': #f2f5fb,
+  'grey-100': #e6ebf4,
+  'grey-200': #d9d9d9,
+  
+  'blue': #0e5df6,
+  'red': #dc4f40,
+  'red-010': #eedbdd,
+  
+  'highlight': #feb62a,
+);
+
+@function hex-to-rgb ($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+  
+:root {
+  @each $key, $value in $colors {
+    --color-#{$key}: #{$value};
+    --color-#{$key}--rgb: #{hex-to-rgb($value)};
+  }
+}
+
+html {
+  background-color: var(--color-grey);
+  color: var(--color-black);
+}

@@ -1,0 +1,57 @@
+-
+  const experienceList = [
+    {
+      image: '@/assets/img/experience/experience-media.jpg',
+      title: '',
+      label: '',
+      description: '',
+    },
+    {
+      //- image: 'false',
+      title: 'Досвід у сфері фінансів',
+      label: '@/assets/img/experience/experience-1.svg',
+      description: 'Наші фахівці — це експерти фінансового сектору, які опрацювали понад 1000 заявок (проєктів) бізнесу різних галузей і секторів економіки, розмовляють з банками однією мовою, що прискорює прийняття рішень.',
+    },
+    {
+      //- image: 'false',
+      title: 'Власний досвід у бізнесі',
+      label: '@/assets/img/experience/experience-2.svg',
+      description: 'Від складання бізнес-плану до безпосереднього представлення інтересів Вашої компанії у фінансових установах для отримання рішення.',
+    },
+    {
+      //- image: 'false',
+      title: 'Досвід системних рішень',
+      label: '@/assets/img/experience/experience-3.svg',
+      description: 'В залежності від запиту ми пропонуємо найкращі інструменти для досягнення мети: державні та регіональні програми підтримки бізнесу, МФО, грантові програми, цільові та інвестиційні кредити.',
+    },
+  ];
+
+section.experience.light
+  ._container
+    .experience__wrapper
+      .section-header.experience__header
+        p.section-header__subtitle досвід
+
+        h2.section-header__title На чому базується наша експертність
+
+      ul.experience-list.advanced-list
+        each item in experienceList
+          if !item.image
+            li.advanced-list__item
+              .advanced-list__content
+                .advanced-list__header
+                  .advanced-list__label
+                    img(src=require(`${item.label}`), alt=`${item.title}`)
+
+                  h3.advanced-list__title= item.title
+
+                p.advanced-list__description= item.description
+          else
+            li.advanced-list__item.empty
+              .experience-list-media
+                .experience-list-media__container
+                  img(
+                    src=require(`${item.image}`),
+                    alt='experience',
+                    loading='lazy'
+                  )

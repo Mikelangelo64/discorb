@@ -1,0 +1,179 @@
+.difficults {
+  
+  //.difficults__wrapper 
+  &__wrapper {
+    width: 100%;
+
+    @include viewport-tablet-min {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    > * + * {
+      @include viewport-tablet-min {
+        margin-left: px-to-rem(40);
+      }
+
+      @include viewport-phone {
+        margin-top: px-to-rem(40);
+      }
+    }
+  }
+  
+  //.difficults__content 
+  &__content {
+    width: 100%;
+
+    @include viewport-desktop {
+      max-width: px-to-rem(572);
+    }
+
+    @include viewport-tablet {
+      max-width: px-to-rem(428);
+    }
+
+    @include viewport-phone {
+      max-width: px-to-rem(492);
+    }
+
+    > * + * {
+      margin-top: px-to-rem(36);
+    }
+  }
+  
+  //.difficults__description 
+  &__description {
+    margin-top: px-to-rem(16);
+  }
+  
+  //.difficults__button 
+  &__button {
+    &.desktop {
+      @include viewport-phone {
+        display: none;
+      }
+    }
+
+    &.mobile {
+      @include viewport-tablet-min {
+        display: none;
+      }
+    }
+  }
+  
+  //.difficults__footer
+  &__footer {
+    @include viewport-tablet-min {
+      display: none;
+    }
+
+    @include viewport-phone {
+      max-width: px-to-rem(492);
+    }
+
+    > * + * {
+      margin-top: px-to-rem(36);
+    }
+  }
+
+  //.difficults-media 
+  &-media {
+    width: 100%;
+
+    &.desktop {
+      @include viewport-phone {
+        display: none;
+      }
+    }
+
+    &.mobile {
+      @include viewport-tablet-min {
+        display: none;
+      }
+    }
+
+    //.difficults-media__container 
+    &__container {
+      width: 100%;
+      // overflow: hidden;
+
+      // transform: translateZ(0);
+      // background-color: var(--color-grey-100);
+
+      // @include viewport-tablet-min {
+      //   border-radius: 0 0 px-to-rem(30) px-to-rem(30);
+      // }
+
+      // @include viewport-phone {
+      //   border-radius: 0 0 px-to-rem(20) px-to-rem(20);
+      // }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+
+      background-color: var(--color-grey-100);
+
+      @include viewport-tablet-min {
+        border-radius: 0 0 px-to-rem(30) px-to-rem(30);
+      }
+
+      @include viewport-phone {
+        border-radius: 0 0 px-to-rem(20) px-to-rem(20);
+      }
+    }
+  }
+  
+  //.difficults-list 
+  &-list {
+    width: 100%;
+
+    @include viewport-phone {
+      max-width: px-to-rem(492);
+    }
+
+    > * + * {
+      margin-top: px-to-rem(12);
+    }
+
+    //.difficults-list__item 
+    &__item {
+      display: flex;
+      align-items: flex-start;
+
+      border-radius: px-to-rem(10);
+      padding: px-to-rem(24) px-to-rem(28);
+
+      background-color: var(--color-white);
+
+      > * + * {
+        margin-left: px-to-rem(16);
+      }
+    }
+
+    //.difficults-list__label 
+    &__label {
+      flex-shrink: 0;
+      width: 100%;
+      max-width: px-to-rem(28);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img,
+      svg {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    //.difficults-list__description 
+    &__description {
+      @include viewport-phone {
+        font-size: px-to-rem(14);
+      }
+    }
+  }
+}

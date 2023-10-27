@@ -1,0 +1,18 @@
+header.header
+  ._container.header__container
+    .header__wrapper
+      a.logo-link.header__logo(href='#') 
+        img(
+          src=require('@/assets/img/logo-black.svg'),
+          alt='logo',
+          draggable='false'
+        )
+
+      .header__buttons
+        a.header-call.contact-link(href='tel:+380662105690')
+          span.contact-link__label
+            img(src=require('@/assets/img/call.svg'), alt='call')
+
+          span.contact-link__text +38 066 210-56-90
+
+  include @/layout/popup.pug

@@ -1,0 +1,57 @@
+-
+  const difficultsList = [
+    'Низька якість поданих документів, які підготував заявник, пізніше вимагають численних уточнень',
+    'Відсутність у персоналу компанії досвіду щодо складанні бізнес-планів за вимогами кредитора',
+    'Різна мова спілкування: кредитор не розуміє бізнес компанії заявника, заявник не розуміє питання, що ставить кредитор',
+    'Недостатність майна заявника для застави та небажання або невміння кредитора запропонувати альтернативне рішення',
+    'Розмаїття програм та кредитних продуктів, у яких не орієнтується заявник, призводять до його нецільового запиту та формальної відмови',
+  ];
+
+section.difficults.grey
+  ._container
+    .difficults__wrapper
+      .difficults__content
+        .section-header
+          p.section-header__subtitle наша робота
+
+          h2.section-header__title Які перепони ми допомагаємо подолати
+
+        p.difficults__description За статистикою фінансових установ майже 35% заявок на фінансування отримують відмову з наступних причин:
+
+        button.difficults__button.button-filled.popup-open.desktop(
+          data-popup='_popup-form'
+        )
+          span Потрібна консультація
+
+        .difficults-media.desktop
+          .difficults-media__container
+            img(
+              src=require('@/assets/img/difficults/difficults-media.jpg'),
+              alt='difficults',
+              loading='lazy'
+            )
+
+      ul.difficults-list
+        each item in difficultsList
+          li.difficults-list__item
+            .difficults-list__label
+              img(
+                src=require('@/assets/img/difficults/difficults-label.png'),
+                alt='difficults'
+              )
+
+            p.difficults-list__description= item
+
+      .difficults__footer
+        button.difficults__button.button-filled.popup-open(
+          data-popup='_popup-form'
+        )
+          span Потрібна консультація
+
+        .difficults-media
+          .difficults-media__container
+            img(
+              src=require('@/assets/img/difficults/difficults-media.jpg'),
+              alt='difficults',
+              loading='lazy'
+            )

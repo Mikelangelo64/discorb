@@ -1,0 +1,56 @@
+-
+  const casesList = [
+    {
+      image: '@/assets/img/cases/cases-1.jpg',
+      title: 'Супровід фінансування компанії',
+      description: 'Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної Групи компаній Caspit. Нашою метою ми бачимо',
+    },
+    {
+      image: '@/assets/img/cases/cases-2.jpg',
+      title: 'Складдання бізнес плану та супровід для кав’ярні',
+      description: 'Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної Групи компаній Caspit. Нашою метою ми бачимо Нашою метою ми бачимо Нашою метою ми бачимо',
+    },
+    {
+      image: '@/assets/img/cases/cases-3.jpg',
+      title: 'Супровід фінансування компанії',
+      description: 'Консалтингова компанія ТОВ «ДІСКОРБ» є частиною міжнародної Групи компаній Caspit. Нашою метою ми бачимо',
+    },
+  ];
+
+section.cases.light
+  ._container
+    .cases__wrapper
+      .section-header.cases-header
+        p.section-header__subtitle наша праця
+
+        h2.section-header__title Кілька кейсів з нашої практики
+
+      .cases__main
+        .cases-slider.swiper.slider
+          .swiper-wrapper
+            - for (let i=0; i<6; i++)
+              each item in casesList
+                .swiper-slide
+                  .cases-slider__item
+                    button.cases-slider-media.popup-open(
+                      data-popup='_popup-case-1'
+                    )
+                      span.cases-slider-media__container
+                        img(
+                          src=require(`${item.image}`),
+                          alt=`${item.title}`,
+                          loading='lazy'
+                        )
+
+                    .cases-slider__content
+                      h3.cases-slider__title= item.title
+
+                      p.cases-slider__description= item.description
+
+                      button.cases-slider__button.button-hollow.popup-open(
+                        data-popup='_popup-case-1'
+                      )
+                        span Деталі проєкту
+
+        .cases-slider-controls.slider-controls
+          .cases-slider-pagination.slider-pagination

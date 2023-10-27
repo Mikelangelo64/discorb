@@ -1,0 +1,47 @@
+-
+  const growthList = [
+    {
+      title: 'Прискорення розвитку',
+      label: '@/assets/img/growth/growth-1.svg',
+      description: 'Залучення наших спеціалістів дозволить вам обрати саме ті проєкти, які дійсно дадуть позитивні результати та забезпечать швидке зростання бізнесу',
+    },
+    {
+      title: 'BANKABLE профіль',
+      label: '@/assets/img/growth/growth-2.svg',
+      description: 'Через консультації та поради щодо структурування групи компаній бізнес стане більш зрозумілим та привабливим для кредитних установ в майбутньому',
+    },
+    {
+      title: 'Поради з організації структури',
+      label: '@/assets/img/growth/growth-3.svg',
+      description: 'Ви зможете побудувати оптимальну структуру, впорядкувати потоки між компаніями',
+    },
+  ];
+
+section.growth.light
+  ._container
+    .growth__wrapper
+      .section-header
+        p.section-header__subtitle розвиток
+
+        h2.section-header__title Що ви отримаєте окрім залучення фінансування
+
+      .growth__content
+        ul.growth-list.advanced-list
+          each item in growthList
+            li.advanced-list__item
+              .advanced-list__content
+                .advanced-list__header
+                  .advanced-list__label
+                    img(src=require(`${item.label}`), alt=`${item.title}`)
+
+                  h3.advanced-list__title= item.title
+
+                .advanced-list__description= item.description
+
+        .growth-media
+          .growth-media__container
+            img(
+              src=require('@/assets/img/growth/growth-media.jpg'),
+              alt='growth-media',
+              loading='lazy'
+            )

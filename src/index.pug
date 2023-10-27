@@ -1,0 +1,37 @@
+-
+  isFooterNearSeo = true;
+
+doctype html
+html(lang='en')
+  head
+    include @/layout/head.pug
+
+    title Discorb
+
+    link(rel='stylesheet', href=require('@/styles/styles.scss'))
+
+  body
+    include @/layout/header.pug
+
+    include @/templates/banner.pug
+
+    include @/templates/experience.pug
+
+    include @/templates/difficults.pug
+
+    include @/templates/growth.pug
+
+    include @/templates/financing.pug
+
+    include @/templates/cases.pug
+
+    include @/templates/about.pug
+
+    include @/templates/team.pug
+
+    include @/templates/seo-banner.pug
+
+    include @/layout/footer.pug
+
+    //- script(src=require('@/scripts/video.ts')) 
+    script(src=require('./index.ts')) 
