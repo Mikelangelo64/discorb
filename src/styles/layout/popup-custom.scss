@@ -50,7 +50,7 @@
       display: block;
       
       &::before {
-        background-color: var(--color-black);
+        background-color: var(--color-white);
       }
     }
   }
@@ -101,7 +101,7 @@
       align-items: flex-start;
 
       padding: px-to-rem(18) var(--wrap);
-      background-color: var(--color-black);
+      background-color: var(--color-white);
     }
 
     @at-root .popup.fullscreen-phone & {

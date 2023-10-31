@@ -1,5 +1,6 @@
 import initLineAnimation from './lineAnimation/init';
 import initPopups from './popup/init';
+import projectToggle from './projectToggle/init';
 import scrollBarInit from './scrollbar';
 import slidersInit from './sliders/init';
 
@@ -133,4 +134,6 @@ export const init = () => {
     //   false
     // );
   }
+
+  projectToggle();
 };

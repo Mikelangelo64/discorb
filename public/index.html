@@ -18,9 +18,60 @@
       <div class="_container header__container">
         <div class="header__wrapper"><a class="logo-link header__logo" href="#"> <img src="assets/img/logo-black.svg"
               alt="logo" draggable="false"></a>
+          <div class="dropdown desktop"><button class="dropdown__header">Наші проекти</button>
+            <ul class="dropdown-list">
+              <li class="dropdown-list__item"><a class="dropdown-list__link" href="#" target="_blank"
+                  rel="noreferrer">ONG Solar</a></li>
+              <li class="dropdown-list__item"><a class="dropdown-list__link" href="#" target="_blank"
+                  rel="noreferrer">Caspit Trade</a></li>
+              <li class="dropdown-list__item"><a class="dropdown-list__link" href="#" target="_blank"
+                  rel="noreferrer">Overtech</a></li>
+              <li class="dropdown-list__item"><a class="dropdown-list__link" href="#" target="_blank"
+                  rel="noreferrer">Agronovatsiia</a></li>
+              <li class="dropdown-list__item"><a class="dropdown-list__link" href="#" target="_blank"
+                  rel="noreferrer">EXIM Leasing</a></li>
+              <li class="dropdown-list__item"><a class="dropdown-list__link" href="#" target="_blank"
+                  rel="noreferrer">Discorb</a></li>
+            </ul>
+          </div>
           <div class="header__buttons"><a class="header-call contact-link" href="tel:+380662105690"><span
                 class="contact-link__label"><img src="assets/img/call.svg" alt="call"></span><span
-                class="contact-link__text">+38 066 210-56-90</span></a></div>
+                class="contact-link__text">+38 066 210-56-90</span></a><button class="menu-burger popup-open"
+              data-popup="_popup-menu"></button></div>
+        </div>
+      </div>
+      <div class="popup popup-menu menu__popup " data-popupname="_popup-menu" aria-modal="true" role="dialog">
+        <div class="popup__overlay"></div>
+        <div class="popup__additional"></div>
+        <div class="popup__scroll">
+          <div class="popup__wrapper"><button class="popup__close hidden"><img src="assets/img/popup-close.svg"
+                alt="close"></button>
+            <div class="popup__content">
+              <div class="modal-menu__header"><button class="popup__close"><img src="assets/img/popup-close-black.svg"
+                    alt="close"></button></div>
+              <div class="modal-menu__main">
+                <div class="dropdown mobile">
+                  <p class="dropdown__header">Наші проекти</p>
+                  <ul class="dropdown-list">
+                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#" target="_blank"
+                        rel="noreferrer">ONG Solar</a></li>
+                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#" target="_blank"
+                        rel="noreferrer">Caspit Trade</a></li>
+                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#" target="_blank"
+                        rel="noreferrer">Overtech</a></li>
+                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#" target="_blank"
+                        rel="noreferrer">Agronovatsiia</a></li>
+                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#" target="_blank"
+                        rel="noreferrer">EXIM Leasing</a></li>
+                    <li class="dropdown-list__item"><a class="dropdown-list__link" href="#" target="_blank"
+                        rel="noreferrer">Discorb</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal-menu__footer"><button class="button-hollow popup-open modal-menu__button"
+                  data-popup="_popup-form"><span>Обратный звонок</span></button></div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="popup popup-common case-1__popup fullscreen-phone" data-popupname="_popup-case-1" aria-modal="true"

@@ -1,3 +1,31 @@
+-
+  const dropdownList = [
+    {
+      href: '#',
+      name: 'ONG Solar'
+    },
+    {
+      href: '#',
+      name: 'Caspit Trade'
+    },
+    {
+      href: '#',
+      name: 'Overtech'
+    },
+    {
+      href: '#',
+      name: 'Agronovatsiia'
+    },
+    {
+      href: '#',
+      name: 'EXIM Leasing'
+    },
+    {
+      href: '#',
+      name: 'Discorb'
+    },
+  ];
+
 header.header
   ._container.header__container
     .header__wrapper
@@ -8,11 +36,25 @@ header.header
           draggable='false'
         )
 
+      .dropdown.desktop
+        button.dropdown__header Наші проекти
+
+        ul.dropdown-list
+          each item in dropdownList
+            li.dropdown-list__item
+              a.dropdown-list__link(
+                href=`${item.href}`,
+                target='_blank',
+                rel='noreferrer'
+              )= item.name
+
       .header__buttons
         a.header-call.contact-link(href='tel:+380662105690')
           span.contact-link__label
             img(src=require('@/assets/img/call.svg'), alt='call')
 
           span.contact-link__text +38 066 210-56-90
+
+        button.menu-burger.popup-open(data-popup='_popup-menu')
 
   include @/layout/popup.pug
