@@ -63,18 +63,20 @@ footer.footer(class=`${isFooterNearSeo ? 'near-seo__below' : ''}`)
                   span.contact-link__text= item.title
 
       .footer__bottom
-        p.footer__group Група компаній Caspit
-          |
-          a(href='https://caspit.group', target='_blank', rel='noreferrer') https://caspit.group
+        .footer__bottom__item
+          p.footer__group Група компаній Caspit
+            |
+            a(href='https://caspit.group', target='_blank', rel='noreferrer') https://caspit.group
 
-        p.footer__copyright Copyright © 2023 ТОВ «ДІСКОРБ»
+          p.footer__copyright Copyright © 2023 ТОВ «ДІСКОРБ»
 
-        //- a.develop(
-          //-   href='https://impulse-design.com.ua/',
-          //-   target='_blank',
-          //-   rel='noreferrer'
-          //- )
-          //-   span.develop__text Developed By
+        .footer__bottom__item
+          a.develop(
+            href='https://impulse-design.com.ua/',
+            target='_blank',
+            rel='noreferrer'
+          )
+            span.develop__text Developed By
 
-          //-   span.develop__img
-          //-     img(src=require('@/assets/img/impulse.svg'), alt='impulse')
+            span.develop__img
+              img(src=require('@/assets/img/impulse.svg'), alt='impulse')

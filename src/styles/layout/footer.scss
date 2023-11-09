@@ -80,6 +80,13 @@
         margin-top: px-to-rem(24);
       }
     }
+
+    //.footer__bottom__item 
+    &__item {
+      > * + * {
+        margin-top: px-to-rem(24);
+      }
+    }
   }
   
   //.footer__item 
@@ -207,12 +214,12 @@
 
     @at-root .develop:hover & {
       @include non-mobile-device {
-        color: var(--color-blue);
+        color: var(--color-red);
       }
     }
     @at-root .develop:focus-visible & {
       @include non-mobile-device {
-        color: var(--color-blue);
+        color: var(--color-red);
       }
     }
   }
